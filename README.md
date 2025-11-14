@@ -16,55 +16,56 @@ Este proyecto contiene una funcionalidad para **agregar y retirar fondos** de un
 
 El proyecto está basado en **arquitectura por dominios**:
 
+```
 project-root/
-|
+
 ├─ database/
-| |
-│ └─ local.db
-|
+
+│  └─ local.db
+
 ├─ drizzle/ # Archivos del ORM
-|
+
 ├─ scripts/ # Seed de la base de datos
-│
+
 ├─ src/
-│ │ 
-│ ├─ modules/
-│ │ |
-│ │ ├─ accounts/
-│ │ │ │
-│ │ │ ├─ exceptions/ # Capa de dominio
-│ │ │ │
-│ │ │ ├─ interfaces/ # Capa de presentación
-│ │ │ │
-│ │ │ ├─ repositories/ # Capa de persistencia
-│ │ │ │
-│ │ │ ├─ schemas/ # Capa de persistencia
-│ │ │ │
-│ │ │ └─ services/ # Lógica de dominio
-│ │ │
-│ │ ├─ database/
-│ │ │ │
-│ │ │ ├─ exceptions/
-│ │ │ │
-│ │ │ └─ db.ts
-│ │ │
-│ │ └─ shared/
-│ │ │
-│ │ ├─ interfaces/ # Interfaces compartidas
-│ │ │
-│ │ ├─ types/ # Tipos compartidos
-│ │ │
-│ │ └─ utils/ # Funciones utilitarias: retry, is-uuid, question
-│ │
-│ └─ main.ts
-│
+
+│  ├─ modules/
+
+│  │  ├─ accounts/
+
+│  │  │  ├─ exceptions/ # Capa de dominio
+
+│  │  │  ├─ interfaces/ # Capa de presentación
+
+│  │  │  ├─ repositories/ # Capa de persistencia
+
+│  │  │  ├─ schemas/ # Capa de persistencia
+
+│  │  │  └─ services/ # Lógica de dominio
+
+│  │  ├─ database/
+
+│  │  │  ├─ exceptions/
+
+│  │  │  └─ db.ts
+
+│  │  └─ shared/
+
+│  │     ├─ interfaces/ # Interfaces compartidas
+
+│  │     ├─ types/ # Tipos compartidos
+
+│  │     └─ utils/ # Funciones utilitarias: retry, is-uuid, question
+
+│  └─ main.ts
+
 ├─ .env
-│
+
 ├─ .gitignore
-│
+
 └─ drizzle.config.ts # Configuración del ORM
 
-
+```
 ---
 ## ⚙️ Configuración Inicial
 
