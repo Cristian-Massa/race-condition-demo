@@ -77,6 +77,18 @@ Configurar la variable de entorno DATABASE_URL apuntando a:
 
 file:./database/local.db
 
+Instalamos dependencias:
+
+```
+npm i
+```
+
+Generamos la base de datos:
+
+```
+generate:db
+```
+
 Ejecutar Drizzle para crear la base de datos y generar los clientes:
 
 ```bash
@@ -126,3 +138,11 @@ Descomentar el bloque inferior que utiliza Promise.all.
 - Reintentos automáticos (retry.ts)
 
 - Evitar inconsistencias en el saldo de la cuenta
+
+
+
+## ⚠️ Importante:
+Es necesario tener instalado 
+- Node js
+- Npm
+- Sqlite
