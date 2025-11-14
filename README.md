@@ -69,22 +69,25 @@ project-root/
 ---
 ## ⚙️ Configuración Inicial
 
-1. **Crear el archivo de entorno**:
-   ```bash
-   mv .env.example .env
+**Crear el archivo de entorno**:
+```bash
+   .env
+```
 Configurar la variable de entorno DATABASE_URL apuntando a:
 
-text
-Copy code
 ./database/local.db
+
 Ejecutar Drizzle para crear la base de datos y generar los clientes:
 
 ```bash
 npx drizzle-kit push
 npx drizzle-kit generate
 ```
+
+### Antes de iniciar la app:
 🚀 Probar el Proyecto
 Crear una cuenta de prueba:
+
 ```
 npm run seed:account
 ```
@@ -123,4 +126,3 @@ Descomentar el bloque inferior que utiliza Promise.all.
 - Reintentos automáticos (retry.ts)
 
 - Evitar inconsistencias en el saldo de la cuenta
-# race-condition-demo
