@@ -1,5 +1,5 @@
 const { db } = require("../dist/src/modules/database/db");
-const { account } = require("../dist/src/modules/accounts/schema/accounts");
+const { account } = require("../dist/src/modules/accounts/schemas/accounts");
 const { randomUUID } = require("crypto");
 
 (async () => {

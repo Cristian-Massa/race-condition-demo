@@ -1,5 +1,5 @@
 import { db } from "@src/modules/database/db.js";
-import { account } from "@src/modules/accounts/schema/accounts.js";
+import { account } from "@src/modules/accounts/schemas/accounts.js";
 import { eq, sql } from "drizzle-orm";
 import { AccountNotFoundException } from "@src/modules/accounts/exceptions/account-not-found-exception.js";
 import type { TransactionType } from "@src/modules/shared/types/accounts.js";

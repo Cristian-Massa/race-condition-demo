@@ -1,7 +1,7 @@
 import { retry } from "@src/modules/shared/utils/retry.js";
 import type { UpdateAccountFoundsProps } from "@src/modules/accounts/interfaces/update-account-founds.js";
 import { accountRepository } from "@src/modules/accounts/repositories/repository.js";
-import type { AccountGet } from "@src/modules/accounts/schema/accounts.js";
+import type { AccountGet } from "@src/modules/accounts/schemas/accounts.js";
 import { AccountNotFoundException } from "@src/modules/accounts/exceptions/account-not-found-exception.js";
 export const updateAccountFounds = async ({
   accountId,

@@ -29,7 +29,7 @@ async function main() {
       console.dir(updated);
 
       console.log("\n--- Transacción completada ---\n");
-      const continueInput = await question("Quiere continuar? Y / N");
+      const continueInput = await question("Quiere continuar? Y / N: ");
       if (continueInput.toUpperCase() !== "Y") process = false;
     } catch (err: any) {
       console.error("Error:", err.message);

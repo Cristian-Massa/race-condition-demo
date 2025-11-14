@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsc && tsc-alias && node dist/src/main.js",
     "build": "tsc && tsc-alias",
-    "seed:account": "npm run build && node scripts/seed-account-test.cjs"
+    "seed:account": "npm run build && node scripts/seed-account-test.cjs",
+    "generate:db": "node scripts/create-database.cjs"
   },
   "keywords": [],
   "author": "",
