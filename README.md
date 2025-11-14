@@ -75,7 +75,7 @@ project-root/
 ```
 Configurar la variable de entorno DATABASE_URL apuntando a:
 
-./database/local.db
+file:./database/local.db
 
 Ejecutar Drizzle para crear la base de datos y generar los clientes:
 
